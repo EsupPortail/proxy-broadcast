@@ -1,0 +1,10 @@
+{
+  "name": "proxy-broadcast",
+  "version": "1.0.0",
+  "description": "Broadcast HTTP requests to backends",
+  "repository": "https://github.com/prigaux/proxy-broadcast",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dns-cache": "^1.0.0"
+  }
+}
