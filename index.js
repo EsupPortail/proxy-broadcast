@@ -28,6 +28,7 @@ var port = env.PORT || 8080;
 var verbose = env.NODE_ENV !== 'production';
 var DNS_TTL = 10; // seconds
 
+// increase performance and eliminate DNS lookup conflicts (https://github.com/joyent/node/issues/7729)
 require('dns-cache')(DNS_TTL * 1000);
 
 function log(msg, o) {
