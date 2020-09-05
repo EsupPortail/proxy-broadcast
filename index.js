@@ -81,7 +81,7 @@ http.createServer(function(request, response) {
                 method: request.method,
                 port: headers['x-forwarded-port'] || '443',
                 headers: {
-                    'Content-Type': headers['content-type'],
+                    'Content-Type': headers['content-type'] || 'text/plain',
                     'User-Agent': ourUserAgent,
                     'Cookie': routeCookiePrefix + route,
                 },
